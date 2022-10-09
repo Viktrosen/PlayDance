@@ -81,6 +81,11 @@
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <plugins>
             <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.3</version>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
@@ -148,8 +153,17 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>spring-releases1</id>
+            <name>Spring Releases</name>
+            <url>https://repo.spring.io/plugins-release/</url>
+        </repository>
     </repositories>
     <pluginRepositories>
+        <pluginRepository>
+            <id>mavencentral</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </pluginRepository>
         <pluginRepository>
             <id>spring-releases</id>
             <name>Spring Releases</name>
