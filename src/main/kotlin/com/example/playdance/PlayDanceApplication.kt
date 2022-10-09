@@ -1,5 +1,6 @@
 package com.example.playdance
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.runApplication
@@ -9,5 +10,5 @@ import org.springframework.boot.runApplication
 class PlayDanceApplication
 
 fun main(args: Array<String>) {
-    runApplication<PlayDanceApplication>(*args)
+    SpringApplication.run(PlayDanceApplication::class.java, *args)
 }
