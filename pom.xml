@@ -67,13 +67,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>jboss.web</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.1.0.GA</version>
-            <scope>provided</scope>
-        </dependency>
-
+        <!-- https://mvnrepository.com/artifact/jboss.web/servlet-api -->
     </dependencies>
 
     <build>
@@ -150,26 +144,26 @@
             <name>Spring Releases</name>
             <url>https://repo.spring.io/release</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
         <repository>
-            <id>spring-releases1</id>
-            <name>Spring Releases</name>
-            <url>https://repo.spring.io/plugins-release/</url>
+            <id>com.springsource.repository.bundles.release</id>
+            <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
+            <url>https://mvnrepository.com/artifact</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>mavencentral</id>
-            <url>https://repo.maven.apache.org/maven2</url>
+            <url>https://mvnrepository.com/artifact/jboss.web/servlet-api</url>
         </pluginRepository>
         <pluginRepository>
             <id>spring-releases</id>
             <name>Spring Releases</name>
-            <url>https://repo.spring.io/release</url>
+            <url>https://repo.spring.io/plugins-release</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
