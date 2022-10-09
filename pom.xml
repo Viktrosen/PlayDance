@@ -67,6 +67,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>jboss.web</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.1.0.GA</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
