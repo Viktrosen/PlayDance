@@ -9,7 +9,7 @@ class MainControl {
 
     @GetMapping("/sayHello")
     fun sayHello(): String {
-        return "Hello world and get off to sleep!!!"
+        return "Hello world and get off to sleep, faster!!!"
     }
 
     @PostMapping("/postHello")
